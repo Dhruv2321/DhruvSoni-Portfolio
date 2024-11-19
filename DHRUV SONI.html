@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Your Name">
+    <title>DHRUV S SONI </title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(45deg, #ff4081, #8e24aa);
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            border-bottom: 5px solid #333;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff4081;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            padding: 18px 30px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #8e24aa;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+         /* About Section */
+        #about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        #about img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        #about img:hover {
+            transform: scale(1.1);
+        }
+        #about .content {
+            max-width: 850px;
+        }
+        #about h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        #about p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: #fff;
+            padding: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #555;
+            text-align: center;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        section ul li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        section ul li:hover {
+            background-color: #ff4081;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        #contact ul {
+            list-style: none;
+            padding: 0;
+        }
+        #contact ul li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        #contact ul li a {
+            color: #ff4081;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        #contact ul li a:hover {
+            color: #8e24aa;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        /* Experience Section Styling */
+        #experience ul li {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        #experience ul li:hover {
+            background-color: #ff4081;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            section {
+                padding: 30px;
+            }
+        }
+
+    </style
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MAST.DHRUV S SONI </h1>
+        <p>"Code.Create.Innovate"</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills & Certifications</a>
+        <a href="#aspirations">Aspirations</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- About Me Section -->
+        <section id="about" class="fadeIn">
+           <img src="C:\Users\2321s\OneDrive\Desktop\DHRUV PHOTO.jpg" alt="Your Photo">
+           <div class="content">
+                <h2>About Me</h2>
+                <p>Hi, I'm Dhruv Soni !! I'm a First-Year B.Tech Student at Sanjivani University, pursuing my passion for Artificial Intelligence and Machine Learning (AIML). With a strong foundation in programming and design, I'm driven to innovate and solve real-world problems.</p>
+           </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <p>I have a strong academic Foundation. Below are the details of my Education</p>
+            <ul>
+                <li><strong>Bachelor of Technology in AIML </strong> - Sanjivani University, 2024-2028</li>
+                <li><strong>Higher Secondary Education</strong> - SND JR.Collage , 2024 </li>
+                <li><strong>Secondary Education </strong> - Sanjivani Academy , 2022</li>
+            </ul>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <p>Here's a look at my Internship </p>
+            <ul>
+                
+                <li><strong>Intern - Web Development </strong> - TwinsisTech (Sep,2024-March,2025)<br>- Assisted in developing innovative AI/ML solutions
+<br>- Collaborated with cross-functional teams to design and implement projects 
+<br>- Contributed to coding and testing phases
+<br>- Gained hands-on experience with industry-standard tools and technologies
+<br>- Enhanced problem-solving skills through real-world applications
+</li>
+            </ul>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills">
+            <h2>Skills & Certifications</h2>
+            <p>Here are the skills I've developed over the years:</p>
+            <ul>
+                <li><strong>Languages :</strong> HTML , Python</li>
+                <li><strong>UI/UX Design :</strong> Figma , Flutter Flow </li>
+                <li><strong>Certifications :</strong> Certified in Python Programming Basic Level(Hacker Rank)</li>
+            </ul>
+        </section>
+
+        <!-- Aspirations Section -->
+        <section id="aspirations">
+            <h2>Aspirations</h2>
+            <p>My goal is to continually grow as a developer and work on innovative projects. I'm excited to leverage my skills and knowledge to create innovative solutions that improve people's lives.In the long term, I aspire to build my own tech company and make meaningful contributions to the world of web development.</p>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you’d like to connect or collaborate, feel free to reach out:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:2321sonidhruv@gmail.com">2321sonidhruv@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dhruv-soni-8747b431b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Dhruv Soni</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/2321sonidhruv/profilecard/?igsh=MXdrOWRwcW53YTViYw==" target="_blank">2321sonidhruv</a></li>
+                <li><strong>Phone:</strong> +91 9028271361</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dhruv S Soni. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
